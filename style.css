@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+  background-color: var(--Red);
+  background-image: url("images/bg-intro-mobile.png");
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  padding-top: 5.6em;
+}
+a {
+  text-decoration: none;
+}
+input,
+button {
+  outline: none;
+  font: inherit;
+  border-radius: 5px;
+}
+.intro {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.intro__header {
+  padding: 2px;
+  margin-bottom: 1.1em;
+}
+.intro__p {
+  font-weight: 400;
+}
+.rounded {
+  border-radius: 8px;
+}
+.purple-btn {
+  display: block;
+  color: white;
+  text-align: center;
+  background-color: var(--Blue);
+  margin-bottom: 1.5em;
+  padding: 0.8em 2.7em;
+  box-shadow: 0 7.5px 0 rgba(62, 60, 73, 0.2);
+  font-weight: 600;
+}
+.purple-btn:hover {
+  background-color: hsl(249, 32%, 42%);
+}
+.purple-btn:active {
+  background-color: hsl(249, 31%, 35%);
+}
+.purple-btn span {
+  font-weight: 400;
+}
+form {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+form {
+  padding: 1.2em;
+  box-shadow: 0 7px 0 rgba(62, 60, 73, 0.2);
+  /* gap: 1em; */
+}
+form input {
+  margin-bottom: 1em;
+  padding: 1.2em 1em;
+  border: 1px solid var(--Grayish-Blue);
+}
+form input::placeholder {
+  color: var(--Dark-Blue);
+  font-weight: 500;
+  opacity: 0.8;
+}
+form p {
+  color: var(--Grayish-Blue);
+  text-align: center;
+  font-size: 0.8rem;
+}
+form a {
+  color: var(--Red);
+  font-weight: 700;
+}
+.btn {
+  background-color: var(--Green);
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.9em 1em;
+  font-weight: 500;
+  box-shadow: 0 4px 0 hsl(154, 57%, 46%);
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: hsl(154, 57%, 46%);
+}
+.btn:active {
+  background-color: hsl(154, 57%, 42%);
+}
