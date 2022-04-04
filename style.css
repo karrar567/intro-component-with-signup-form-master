@@ -12,7 +12,10 @@
   --Dark-Blue: hsl(249, 10%, 26%);
   --Grayish-Blue: hsl(246, 25%, 77%);
 }
-
+html,
+body {
+  height: 100%;
+}
 body {
   background-color: var(--Red);
   background-image: url("images/bg-intro-mobile.png");
@@ -26,6 +29,10 @@ main {
   flex-direction: column;
   padding: 1.5em;
   padding-top: 5.6em;
+}
+.intro,
+.sign-up {
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -41,12 +48,13 @@ button {
   margin-bottom: 5em;
 }
 .intro__header {
-  padding: 2px;
+  padding: 0 2px;
   margin-bottom: 1.1em;
 }
 .intro__p {
   font-weight: 400;
 }
+
 .rounded {
   border-radius: 8px;
 }
@@ -87,6 +95,9 @@ form input::placeholder {
   color: var(--Dark-Blue);
   font-weight: 500;
   opacity: 0.8;
+}
+form input:focus {
+  border-color: black;
 }
 .error-container {
   color: var(--Red);
@@ -133,4 +144,29 @@ form a {
 }
 .btn:active {
   background-color: hsl(154, 57%, 42%);
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    display: grid;
+    place-items: center;
+  }
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    width: 75%;
+  }
+  .intro {
+    text-align: left;
+    margin: 0;
+    font-size: 2.3rem;
+  }
+  .intro__header {
+    font-size: 2.3rem;
+  }
+  .intro__p {
+    font-size: 0.9rem;
+  }
 }
