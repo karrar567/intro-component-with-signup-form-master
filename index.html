@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="validator.js"></script>
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
@@ -41,10 +42,18 @@
           >Try it free 7 days <span>then $20/mo. thereafter</span></a
         >
         <form class="rounded">
-          <input type="text" placeholder="First Name" />
-          <input type="text" placeholder="Last Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="password" placeholder="Password" />
+          <input type="text" placeholder="First Name" id="first-name" />
+          <div id="first-name-error" class="error-container"></div>
+
+          <input type="text" placeholder="Last Name" id="last-name" />
+          <div id="last-name-error" class="error-container"></div>
+
+          <input type="text" placeholder="Email Address" id="email-address" />
+          <div id="email-address-error" class="error-container"></div>
+
+          <input type="password" placeholder="Password" id="password" />
+          <div id="password-error" class="error-container"></div>
+
           <button type="submit" class="btn">Claim your free trial</button>
           <p>
             By clicking the button, you are agreeing to our
